@@ -1,0 +1,97 @@
+$black-background: #1E1E1E;
+$gray-background: #535353;
+$input-background: #454545;
+$border: #747474;
+$normal-text: #C7C7C7;
+$white-text: #FFFFFF;
+
+body {
+  background-color: $gray-background;
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.formula_input {
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+  border: 3px solid $border;
+  font-size: xx-large;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+
+  .inline_check_box {
+    width: fit-content;
+    color: $normal-text;
+
+    input {
+      accent-color: $normal-text;
+    }
+
+    label {
+      user-select: none;
+    }
+  }
+
+  .buttons {
+    display: flex;
+
+    .cancel_button,
+    .enter_button {
+      height: 1.8rem;
+      width: 8rem;
+      margin: 0 0.5rem;
+      background-color: $gray-background;
+      border-radius: 100vh;
+      color: $white-text;
+
+      &:hover {
+        background-color: $white-text;
+        color: $gray-background;
+      }
+    }
+
+    .cancel_button {
+      border: 1px solid $white-text;
+    }
+
+    .enter_button {
+      border: 3px solid $white-text;
+    }
+  }
+}
+
+.formula_preview {
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 180px;
+  background-color: $black-background;
+  flex-grow: 1;
+  p {
+    color: $white-text;
+    margin: 0px;
+    padding: 0 0.3em;
+  }
+
+  &.inline {
+    font-size: xx-large;
+  }
+
+  &.display {
+    font-size: x-large;
+  }
+}
