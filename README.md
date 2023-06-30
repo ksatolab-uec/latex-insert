@@ -1,13 +1,14 @@
 # latex.insert
+<img width="859" alt="example" src="https://github.com/ksatolab-uec/latex-insert/assets/98139555/a16c4361-aebb-4c7f-acea-6fc7e5eeb8be">
 
-latex記法でAdobe IllustratorとAdobe Indesignに数式を挿入することができるプラグインです。
+LaTex記法でAdobe IllustratorとAdobe Indesignに数式を挿入することができるプラグインです。
 
 ## インストール方法
 
 1. `npm run zxp`でビルドができます。
-2. `dist/zxp`にzxpファイルができるのでインストールしてください。
+2. `dist/zxp`にzxpファイルができるのでインストールしてください。zxpファイルのインストールには[Unified Plugin Installer Agent(UPIA)](https://helpx.adobe.com/jp/creative-cloud/help/working-from-the-command-line.html)が使用可能です。
 
-詳しくは [HyperBrew Bolt-CEP](https://github.com/hyperbrew/bolt-cep)を参考にしてください。
+* 詳しくは [HyperBrew Bolt-CEP](https://github.com/hyperbrew/bolt-cep)を参考にしてください。
 
 ## 使い方
 
