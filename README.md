@@ -8,7 +8,7 @@ LaTex記法でAdobe IllustratorとAdobe Indesignに数式を挿入すること�
 1. `npm run zxp`でビルドができます。
 2. `dist/zxp`にzxpファイルができるのでインストールしてください。zxpファイルのインストールには[Unified Plugin Installer Agent(UPIA)](https://helpx.adobe.com/jp/creative-cloud/help/working-from-the-command-line.html)が使用可能です。
 
-* 詳しくは [HyperBrew Bolt-CEP](https://github.com/hyperbrew/bolt-cep)を参考にしてください。
+* 詳しくは [HyperBrew Bolt-CEP](https://github.com/hyperbrew/bolt-cep)を参考にしてください。例えばM1/M2 Macを使用している場合、[トラブルシューティング](https://github.com/hyperbrew/bolt-cep#misc-troubleshooting)を参考に一部ファイルのパーミッションを変更する必要があります。
 
 ## 使い方
 
