@@ -12,9 +12,9 @@ LaTex記法でAdobe IllustratorとAdobe Indesignに数式を挿入すること�
 
 ## 使い方
 
-llustratorかIndesignを開いて`ウィンドウ → エクステンション → Latex.insert`から使ってください。
+llustratorかInDesignを開いて`ウィンドウ → エクステンション → Latex.insert`から使ってください。
 
-なお、挿入時にIndesignの場合はファイルと同じ階層にAssetsというディレクトリが作成され、その中に数式のファイルが保存されます。
+なお、挿入時にInDesignの場合はファイルと同じ階層にAssetsというディレクトリが作成され、その中に数式のファイルが保存されます。
 
 Illustratorは埋め込まれるので数式ファイルはtmpディレクトリに作成後自動的にすぐに消去されます。
 
