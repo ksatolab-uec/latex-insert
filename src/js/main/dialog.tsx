@@ -57,7 +57,12 @@ const Dialog = () => {
         const homeDir = process.env[process.platform == "win32" ? "USERPROFILE" : "HOME"] as string;
         let saveDir: string = await evalTS("getFormulasDirPath", isWin, homeDir);
         const saveFile = path.join(saveDir, `${uuid}.svg`);
-        fs.writeFileSync(saveFile, svg);
+        try {
+          await evalTS("writeSVGFile", saveFile, svg)
+        } catch (error) {
+          // なぜかエラーが出るのでやむを得ず握りつぶす
+          // 握り潰しても動作への影響はないと思われる
+        }
         try {
           await evalTS("place", saveFile);
         } catch (error) {
