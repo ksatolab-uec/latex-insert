@@ -92,10 +92,12 @@ const Dialog = () => {
       <textarea
         className="formula_input"
         rows={3}
-        value={formula}
         onChange={(e) => {
-          const v = e.target.value.replaceAll("¥", "\\");
+          const cursorPos = e.currentTarget.selectionStart;
+          const v = e.currentTarget.value.replaceAll("¥", "\\");
           setFormula(v);
+          e.currentTarget.value = v;
+          e.currentTarget.setSelectionRange(cursorPos, cursorPos);
         }}>
       </textarea>
       <FormulaPreview className={`formula_preview ${(isInline ? 'inline' : 'display')}`} formulaTxt={formula} isInline={isInline} ref={formulaPreviewRef}></FormulaPreview>
