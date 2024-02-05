@@ -76,6 +76,13 @@ export const getFormulasDirPath = (isWin: boolean, homeDir: string) => {
   return convertPath(getFormulasFolder(), isWin, homeDir)
 }
 
+export const writeSVGFile = (saveFile: string, svg: string) => {
+  const writeFile = File(saveFile);
+  writeFile.open('w');
+  writeFile.write(svg);
+  writeFile.close();
+}
+
 export const place = (placeFilePath: string) => {
   const placeFile = File(placeFilePath);
   // @ts-ignore
